@@ -73,7 +73,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="runButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sUz-MR-9sb"/>
+                                    <action selector="runButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vfh-yh-7w9"/>
                                 </connections>
                             </button>
                         </subviews>

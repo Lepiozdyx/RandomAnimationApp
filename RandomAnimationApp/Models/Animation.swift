@@ -14,12 +14,10 @@ struct Animation {
     let rotate: Double
     
     static func getRandomAnimation() -> Animation {
-        let animation = Animation(
+        Animation(
             animation: DataStore.shared.animations.randomElement() ?? "",
             curve: DataStore.shared.curves.randomElement() ?? "",
             rotate: Double.random(in: -5...5.0)
         )
-        
-        return animation
     }
 }

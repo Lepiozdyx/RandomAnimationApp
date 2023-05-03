@@ -29,7 +29,7 @@ final class AnimationViewController: UIViewController {
     }
     
     // MARK: - IBAction
-    @IBAction func runButtonTapped(_ sender: UIButton) {
+    @IBAction func runButtonTapped() {
         animationView.animation = currentAnimation.animation
         animationView.curve = currentAnimation.curve
         animationView.rotate = currentAnimation.rotate
@@ -44,9 +44,9 @@ final class AnimationViewController: UIViewController {
     
     // MARK: - Private methods
     private func changeButtonTitle() {
-        runButton.setTitle("Run \(nextAnimation.animation)", for: .normal)
+        runButton.setTitle("Run, next - \(nextAnimation.animation)", for: .normal)
     }
-    // завтра надо или убирай сендер, или убирай метод выше и менять название кнопки в экшине? так же подумай над очередностью вызова!
+
     private func setValue(for labels: UILabel...) {
         labels.forEach { label in
             switch label {
