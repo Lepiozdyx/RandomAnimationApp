@@ -12,49 +12,27 @@ final class AnimationViewController: UIViewController {
 
     // MARK: - IBOutlets
     @IBOutlet var animationView: SpringView!
-    @IBOutlet var runButton: UIButton!
-    
-    @IBOutlet var animationLabel: UILabel!
-    @IBOutlet var curveLabel: UILabel!
-    @IBOutlet var rotateLabel: UILabel!
-    
-    // MARK: - Private properties
-    private var currentAnimation = Animation.getRandomAnimation()
-    private var nextAnimation = Animation.getRandomAnimation()
-    
-    // MARK: - Override methods
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setValue(for: animationLabel, curveLabel, rotateLabel)
+    @IBOutlet var descriptionLabel: UILabel! {
+        didSet {
+            descriptionLabel.text = animation.description
+        }
     }
     
+    // MARK: - Private properties
+    private var animation = Animation.randomAnimation
+    
     // MARK: - IBAction
-    @IBAction func runButtonTapped() {
-        animationView.animation = currentAnimation.animation
-        animationView.curve = currentAnimation.curve
-        animationView.rotate = currentAnimation.rotate
+    @IBAction func runButtonTapped(_ sender: UIButton) {
+        descriptionLabel.text = animation.description
+        
+        animationView.animation = animation.animation
+        animationView.curve = animation.curve
+        animationView.rotate = animation.rotate
         
         animationView.animate()
         
-        currentAnimation = nextAnimation
-        nextAnimation = Animation.getRandomAnimation()
-        changeButtonTitle()
-        setValue(for: animationLabel, curveLabel, rotateLabel)
-    }
-    
-    // MARK: - Private methods
-    private func changeButtonTitle() {
-        runButton.setTitle("Run, next - \(nextAnimation.animation)", for: .normal)
-    }
-
-    private func setValue(for labels: UILabel...) {
-        labels.forEach { label in
-            switch label {
-            case animationLabel: label.text = "Animation: \(currentAnimation.animation)"
-            case curveLabel: label.text = "Curve: \(currentAnimation.curve)"
-            default: label.text = String(format: "Rotate: %.1f", currentAnimation.rotate)
-            }
-        }
+        animation = Animation.randomAnimation
+        sender.setTitle("Run \(animation.animation)", for: .normal)
     }
     
 }
