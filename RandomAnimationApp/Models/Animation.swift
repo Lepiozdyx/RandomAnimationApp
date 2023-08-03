@@ -12,6 +12,7 @@ struct Animation {
     let rotate: Double
     let duration: Double
     let delay: Double
+    let color: RGBColor
     
     var description: String {
         """
@@ -29,7 +30,8 @@ struct Animation {
             curve: DataStore.shared.curves.randomElement()?.rawValue ?? "easeIn",
             rotate: Double.random(in: -5...5.0),
             duration: Double.random(in: 0.8...1.5),
-            delay: 1
+            delay: 1,
+            color: RGBColor.getRandomColor()
         )
     }
 }
