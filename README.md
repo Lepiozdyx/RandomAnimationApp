@@ -6,6 +6,7 @@
 
 - Swift
 - UIKit
+- MVC
 - SpringAnimation framework
 
 **Features**
@@ -14,6 +15,7 @@
 - Animation description display: The descriptionLabel displays the details of the current animation, including the preset, curve, rotation, duration, and delay.
 - Animation execution: The animationView animates based on the selected animation with the specified curve, rotation, duration, and delay.
 - Animation randomization: Tapping the "Run" button triggers the generation of a new random animation, updating the description and animating the animationView accordingly.
+- Random color generation: the color of the view changes with each new animation, an extension for UIColor is used for this.
 - MVC architecture: The app follows the Model-View-Controller (MVC) architectural pattern for organizing and separating the data, user interface, and logic components of the application.
 
 **Acknowledgements**
@@ -24,6 +26,6 @@ The RandomAnimationApp was developed as a learning project to explore the capabi
 
 The RandomAnimationApp showcases the usage of the SpringAnimation framework in a simple and interactive way. It serves as a tool for users to experiment with different animations and gain a better understanding of the capabilities of the framework. Feel free to explore, modify, and enhance the app to further your understanding of animations and the SpringAnimation framework.
 
-<img width="170" alt="Снимок экрана 2023-05-28 в 14 41 20" src="https://github.com/Lepiozdyx/RandomAnimationApp/assets/24369933/de63110c-bc51-436a-afc1-24830fb2f2cc"> 
-<img width="170" alt="Снимок экрана 2023-05-28 в 14 41 36" src="https://github.com/Lepiozdyx/RandomAnimationApp/assets/24369933/aef5af05-a81d-4f93-a407-7ada9dfa8f00">
-<img width="170" alt="Снимок экрана 2023-05-28 в 14 42 25" src="https://github.com/Lepiozdyx/RandomAnimationApp/assets/24369933/3cd53666-d0f9-4327-a0ff-0a9ed43a39f3">
+<img width="200" alt="Снимок экрана 2023-05-28 в 14 41 20" src="https://github.com/Lepiozdyx/RandomAnimationApp/assets/24369933/de63110c-bc51-436a-afc1-24830fb2f2cc"> 
+<img width="200" alt="Снимок экрана 2023-08-03 в 11 02 01" src="https://github.com/Lepiozdyx/RandomAnimationApp/assets/24369933/acf2d85f-7568-4359-bd74-7febcc6661d9">
+<img width="200" alt="Снимок экрана 2023-08-03 в 11 03 23" src="https://github.com/Lepiozdyx/RandomAnimationApp/assets/24369933/cd37827a-9af3-4f9e-a695-33f8018f3e77">
