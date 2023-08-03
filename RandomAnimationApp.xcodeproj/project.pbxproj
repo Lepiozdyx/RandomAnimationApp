@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA4519D62A7BE77800749137 /* RGBColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4519D52A7BE77800749137 /* RGBColor.swift */; };
+		FA4519D82A7BE8F100749137 /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4519D72A7BE8F100749137 /* Extension+UIColor.swift */; };
 		FAC10A412A01849A0062C867 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC10A402A01849A0062C867 /* AppDelegate.swift */; };
 		FAC10A432A01849A0062C867 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC10A422A01849A0062C867 /* SceneDelegate.swift */; };
 		FAC10A452A01849A0062C867 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC10A442A01849A0062C867 /* AnimationViewController.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA4519D52A7BE77800749137 /* RGBColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBColor.swift; sourceTree = "<group>"; };
+		FA4519D72A7BE8F100749137 /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
 		FAC10A3D2A01849A0062C867 /* RandomAnimationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomAnimationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC10A402A01849A0062C867 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAC10A422A01849A0062C867 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA4519D92A7BE8F600749137 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA4519D72A7BE8F100749137 /* Extension+UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		FAC10A342A01849A0062C867 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +78,7 @@
 				FAC10A5B2A0199A00062C867 /* Services */,
 				FAC10A5A2A01992E0062C867 /* Models */,
 				FAC10A562A0185400062C867 /* ViewControllers */,
+				FA4519D92A7BE8F600749137 /* Extensions */,
 				FAC10A552A01852C0062C867 /* Storyboards */,
 				FAC10A492A01849C0062C867 /* Assets.xcassets */,
 			);
@@ -103,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				FAC10A5E2A019A800062C867 /* Animation.swift */,
+				FA4519D52A7BE77800749137 /* RGBColor.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -194,7 +208,9 @@
 			files = (
 				FAC10A452A01849A0062C867 /* AnimationViewController.swift in Sources */,
 				FAC10A5D2A0199D80062C867 /* DataStore.swift in Sources */,
+				FA4519D82A7BE8F100749137 /* Extension+UIColor.swift in Sources */,
 				FAC10A412A01849A0062C867 /* AppDelegate.swift in Sources */,
+				FA4519D62A7BE77800749137 /* RGBColor.swift in Sources */,
 				FAC10A5F2A019A800062C867 /* Animation.swift in Sources */,
 				FAC10A432A01849A0062C867 /* SceneDelegate.swift in Sources */,
 			);
