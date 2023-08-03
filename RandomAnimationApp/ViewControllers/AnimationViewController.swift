@@ -28,6 +28,7 @@ final class AnimationViewController: UIViewController {
         animationView.animation = animation.animation
         animationView.curve = animation.curve
         animationView.rotate = animation.rotate
+        animationView.backgroundColor = UIColor(color: animation.color)
         
         animationView.animate()
         
