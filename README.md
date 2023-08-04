@@ -21,6 +21,7 @@
 **Acknowledgements**
 
 The RandomAnimationApp was developed as a learning project to explore the capabilities of the SpringAnimation framework. Special thanks to the creators of SpringAnimation for providing a powerful and intuitive animation library.
+Link: https://github.com/LexDeBash/SpringAnimation
 
 **Conclusion**
 
